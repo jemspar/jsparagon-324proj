@@ -1,0 +1,51 @@
+// MAIN STYLESHEET STARTED 2019-09-18 v0.1
+
+//Content of page
+#page {
+    width: 80vw;
+    padding: 5%;
+    // float: right;
+    display: inline-block;
+    position: absolute;
+    left: 20vw;
+}
+
+//Sidebar menu
+#menu {
+    width: 20vw;
+    padding: 10% 5% 10% 5%;
+    position: fixed;
+    display: inline-block;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 3vw;
+
+    a {
+        width: 100%;
+        display: block;
+    }
+    a:hover {
+        text-decoration: none;
+        font-style: italic;
+    }
+}
+
+h1 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 5vw;
+}
+
+.home_img {
+    width: 50%;
+        margin-left: 2vw;
+        margin-top: 2vw;
+        animation-name: rotation;
+        animation-duration: 5s;
+        animation-iteration-count: 10;
+    }
+
+
+    @keyframes rotation {
+        0% {transform: rotateY(0deg);}
+        50% {transform: rotateY(180deg);}
+        100% {transform: rotateY(360deg);}
+    }
