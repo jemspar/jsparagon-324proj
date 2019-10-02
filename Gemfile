@@ -29,6 +29,8 @@ group :development, :test do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3', '1.4.1'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'rspec-rails'
+  gem 'guard-rspec'
 end
 
 group :development do
@@ -46,11 +48,11 @@ group :test do
   gem 'selenium-webdriver', '3.142.3'
   # Easy installation and use of web drivers to run system tests with browsers
   gem 'webdrivers', '4.1.2'
-    gem 'rails-controller-testing', '1.0.4'
-    gem 'minitest',                 '5.11.3'
-    gem 'minitest-reporters',       '1.3.8'
-    gem 'guard',                    '2.15.0'
-    gem 'guard-minitest',           '2.4.6'
+  gem 'rails-controller-testing', '1.0.4'
+  gem 'minitest',                 '5.11.3'
+  gem 'minitest-reporters',       '1.3.8'
+  gem 'guard',                    '2.15.0'
+  gem 'guard-minitest',           '2.4.6'
 end
 
 group :production do
