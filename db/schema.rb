@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_09_25_050313) do
+ActiveRecord::Schema.define(version: 2019_10_03_015124) do
 
   create_table "days", force: :cascade do |t|
     t.string "what"
@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 2019_09_25_050313) do
     t.string "when"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "num"
   end
 
 end
