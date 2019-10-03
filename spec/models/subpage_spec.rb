@@ -20,4 +20,3 @@ RSpec.describe "day database check", type: :database do
 end
 
 
-
