@@ -1,6 +1,7 @@
 class HomepageController < ApplicationController
   def home
-    cookies[:day] = rand(4) + 1
-    print "\nToday is day number " + cookies[:day].to_s + "\n"
+    session[:daynum] = rand(Day.count) + 1
+    session[:day] = Day.find_by num: session[:daynum]
+    print "\nToday is day number " + session[:day]["num"].to_s + " and we are " + session[:day]["what"] + "\n"
   end
 end
