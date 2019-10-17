@@ -1,0 +1,60 @@
+
+---
+ar_internal_metadata:
+  columns:
+  - key
+  - value
+  - created_at
+  - updated_at
+  records: 
+  - - environment
+    - development
+    - '2019-09-09 00:29:14.034482'
+    - '2019-09-09 00:29:14.034482'
+
+---
+days:
+  columns:
+  - id
+  - what
+  - where
+  - when
+  - created_at
+  - updated_at
+  - num
+  records: 
+  - - 19
+    - Backsliding
+    - image1.jpg
+    - Thu Sep 19 03:09:48 UTC 2019
+    - '2019-10-03 02:32:35.495307'
+    - '2019-10-03 02:32:35.495307'
+    - 1
+  - - 20
+    - Reminiscing
+    - image2.jpg
+    - Mon Sep 23 02:21:40 UTC 2019
+    - '2019-10-03 02:32:35.510533'
+    - '2019-10-03 02:32:35.510533'
+    - 2
+  - - 21
+    - Exaggerating
+    - image3.jpg
+    - Sat Sep 21 14:12:52 UTC 2019
+    - '2019-10-03 02:32:35.523778'
+    - '2019-10-03 02:32:35.523778'
+    - 3
+  - - 22
+    - Napping
+    - image4.jpg
+    - Mon Sep 16 20:45:11 UTC 2019
+    - '2019-10-03 02:32:35.537592'
+    - '2019-10-03 02:32:35.537592'
+    - 4
+  - - 23
+    - Synthesizing
+    - image5.jpg
+    - 2019-10-17 02:45:30 UTC
+    - '2019-10-17 02:45:43.128948'
+    - '2019-10-17 02:51:18.561199'
+    - 5

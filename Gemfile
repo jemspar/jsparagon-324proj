@@ -25,6 +25,9 @@ gem 'jbuilder', '2.9.1'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '1.4.4', require: false
 
+# for transferring data btwn dbs
+gem 'yaml_db'
+
 group :development, :test do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3', '1.4.1'
