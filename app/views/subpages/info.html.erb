@@ -1,0 +1,7 @@
+<% provide(:title, "Info") %>
+
+<p>There are <%= Day.count %> days currently recorded.</p>
+
+<% Day.all.each do |d| %>
+    <%= image_tag(d.where, class: "thumbnail") %>
+<% end %>

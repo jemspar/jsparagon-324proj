@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   get "/where", to: "subpages#where"
   get "/when", to: "subpages#when"
   resources :days
+  get "/info", to: "subpages#info"
 end
