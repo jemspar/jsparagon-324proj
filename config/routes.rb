@@ -7,4 +7,7 @@ Rails.application.routes.draw do
   get "/when", to: "subpages#when"
   resources :days
   get "/info", to: "subpages#info"
+
+  get "/submit", to: "subpages#submit#ask"
+  post "/submit", to: "subpages#submit#receive"
 end

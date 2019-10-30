@@ -14,4 +14,10 @@ class SubpagesController < ApplicationController
   end
   def info
   end
+  def submit
+    def ask
+    end
+    def receive
+    end
+  end
 end
