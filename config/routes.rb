@@ -9,5 +9,5 @@ Rails.application.routes.draw do
   get "/info", to: "subpages#info"
 
   get "/submit", to: "subpages#submit#ask"
-  post "/submit", to: "subpages#submit#receive"
+  # post "/submit", to: "days#submit"
 end

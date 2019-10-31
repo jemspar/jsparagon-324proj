@@ -15,9 +15,11 @@ class SubpagesController < ApplicationController
   def info
   end
   def submit
-    def ask
-    end
-    def receive
-    end
+    @day = Day.new
+    # def ask
+    #   @day = Day.new
+    # end
+    # def receive
+    # end
   end
 end
