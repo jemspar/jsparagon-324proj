@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title><%= yield(:title) %> | Jeremy Sparagon on a day</title>
     <%= csrf_meta_tags %>
@@ -27,7 +27,7 @@
     
     ><div id="page">
       <h1><%= yield(:title) %></h1>
-      <%= yield %>
+      <%= content_for?(:content) ? yield(:content) : yield %>
     </div>
     
 
