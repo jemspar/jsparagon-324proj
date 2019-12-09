@@ -1,7 +1,10 @@
 class HomepageController < ApplicationController
   def home
-    session[:daynum] = rand(Day.count) + 1
-    session[:day] = Day.find_by num: session[:daynum]
-    print "\nToday is day number " + session[:day]["num"].to_s + " and we are " + session[:day]["what"] + "\n"
+    cookies[:daynum] = rand(Day.count) + 1
+    cookies[:day] = {
+      :value => (Day.find_by num: cookies[:daynum]).to_json,
+      :expires => 1.day.from_now
+  }
+    print "\nToday is day number " + (JSON.parse cookies[:day])["num"].to_s + " and we are " + (JSON.parse cookies[:day])["what"] + "\n"
   end
 end
