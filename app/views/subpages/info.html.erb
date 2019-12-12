@@ -3,5 +3,5 @@
 <p>There are <%= Day.count %> days currently recorded.</p>
 
 <% Day.all.each do |d| %>
-    <a href="/day/<%= d.num %>"><div class="thumbnail" style="background-image: url('<%= (d.whereimg)[:url] %>')"><%= d.num %></div></a>
+    <a href="/day/<%= d.num %>"><div class="thumbnail" style="background-image: url('<%= d.whereimg.url %>')"><%= d.num %></div></a>
 <% end %>
