@@ -13,7 +13,7 @@ jobs:
       uses: actions/setup-ruby@v1
       with:
         ruby-version: 2.6.x
-    - name: Build and test with Rake
+    - name: Build and test with RSpec
       run: |
         sudo apt-get install libpq-dev libsqlite3-dev
         gem install bundler

@@ -23,7 +23,7 @@ class WhereUploader < CarrierWave::Uploader::Base
 
   # Process files as they are uploaded:
   # process scale: [200, 300]
-  #
+  
   # def scale(width, height)
   #   # do something
   # end

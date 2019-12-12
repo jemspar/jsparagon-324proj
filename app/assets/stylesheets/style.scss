@@ -8,6 +8,7 @@
     display: inline-block;
     position: absolute;
     left: 20%;
+    font-family: 'Open Sans', 'Segoe UI', sans-serif;
 }
 
 //Sidebar menu
@@ -44,11 +45,11 @@ h1 {
     }
 
 
-    @keyframes rotation {
-        0% {transform: rotateY(0deg);}
-        50% {transform: rotateY(180deg);}
-        100% {transform: rotateY(360deg);}
-    }
+@keyframes rotation {
+    0% {transform: rotateY(0deg);}
+    50% {transform: rotateY(180deg);}
+    100% {transform: rotateY(360deg);}
+}
 
 img {
     image-orientation: from-image;

@@ -8,6 +8,8 @@ Rails.application.routes.draw do
   resources :days
   get "/info", to: "subpages#info"
 
-  get "/submit", to: "subpages#submit#ask"
+  get "/submit", to: "days#new"
   # post "/submit", to: "days#submit"
+
+  get "/day/:selection", to: "days#view"
 end

@@ -1,0 +1,16 @@
+<% provide(:title, "Submit") %>
+
+
+<h2>Submit a day:</h2>
+
+<%= form_for @day, id: "submitform" do |f| %>
+  <%= f.label :what %>
+  <%= f.text_field :what %> <br />
+
+  <%= f.label :whereimg %>
+  <%= f.file_field :whereimg %> <br />
+
+  <%= f.label :when %>
+  <%= f.text_field :when %> <br />
+  <%= f.submit "Create" %>
+<% end %>
