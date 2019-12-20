@@ -5,3 +5,5 @@
 <% Day.all.each do |d| %>
     <a href="/day/<%= d.num %>"><div class="thumbnail" style="background-image: url('<%= d.whereimg.url %>')"><%= d.num %></div></a>
 <% end %>
+
+<p>This project showcases my skill in web development of dynamic Rails-based sites. I previously only had experience designing static websites, but now I am able to use a database which can be both read from and uploaded to by the user, and which interacts with the client through the use of cookies. In developing this site, I was able to truly learn the versatility of Rails (i.e. I was able to add a very abstract type of database record, and include an uploader using a Ruby gem). I started with a skeletal site which displayed journal-like information about a single day, and then as I learned Rails development, added more and more features to flesh out the idea of a collaborative digital/visual journal.</p>

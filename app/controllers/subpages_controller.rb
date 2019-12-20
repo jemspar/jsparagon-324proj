@@ -1,12 +1,8 @@
 class SubpagesController < ApplicationController
-  before_action :check_for_cookies
+  before_action :parse_cookie
 
-  def check_for_cookies
-    # if cookies[:day] == nil then
-    #   render html: "Sorry, this site requires the use of cookies."
-    # else
+  def parse_cookie
       @currentDay = JSON.parse cookies[:day]
-    # end
   end
   def what
     # whatarray = ["Backsliding", "Reminiscing", "Exaggerating", "Napping"]
